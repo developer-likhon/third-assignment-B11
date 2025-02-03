@@ -24,6 +24,7 @@
         --color-background: #fff9f4;
         /* footer color */
         --color-foot: rgba(255, 220, 38, 0.5);
+        --color-font: rgba(17, 17, 17, 1);
       }
     </style>
 
@@ -61,9 +62,9 @@
       <nav
         class="bg-background justify-center border-b-2 border-black md:border-none overflow-hidden"
       >
-        <div class="flex items-center mx-auto max-w-7xl px-6">
+        <div class="flex items-center mx-auto md:max-w-7xl px-6">
           <!-- logo menu -->
-          <div class="flex flex-1 items-center gap-3 py-6">
+          <div class="flex flex-1 items-center gap-3 py-3">
             <img src="./c1-assets/logo-header.png" alt="logo-header" />
             <h1 class="text-2xl hidden md:flex">
               Browse<span class="text-btn">4</span>Pets
@@ -146,7 +147,36 @@
     </header>
 
     <!-- main start -->
-    <main></main>
+    <main class="md:max-w-7xl mx-auto mt-7">
+      <!-- Hero Section start -->
+      <div class="md:mt-16">
+        <div class="relative">
+          <img
+            class="absolute top-25 md:-top-20 -z-1"
+            src="./c1-assets/cat-big.png"
+            alt="cat-big"
+          />
+          <h1 class="px-6 text-3xl md:text-6xl font-adlam">
+            Pamper Your Pet, <br />
+            Because They Deserve <br />
+            the Bes
+          </h1>
+
+          <p class="px-6 opacity-[0.7] mt-3 md:text-xl md:w-2/3">
+            Discover a world of treats, toys, and <br class="md:hidden" />
+            essentials handpicked for your furry <br class="md:hidden" />
+            friends. Shop now and make tails wag with <br class="md:hidden" />
+            joy!
+          </p>
+
+          <button
+            class="mx-6 border bg-[--color-btn] py-2 px-7 rounderd-xl rounded-xl cursor-pointer mt-5 animate-bounce"
+          >
+            Find a pet
+          </button>
+        </div>
+      </div>
+    </main>
 
     <!-- footer start -->
     <footer></footer>
