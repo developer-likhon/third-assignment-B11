@@ -15,7 +15,7 @@
     <!-- Tailwind v.4 CDN -->
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <style type="text/tailwindcss">
-      @theme {
+      :root {
         /* button color */
         --color-btn: #ffdc26;
         /* card color */
@@ -67,7 +67,7 @@
           <div class="flex flex-1 items-center gap-3 py-3">
             <img src="./c1-assets/logo-header.png" alt="logo-header" />
             <h1 class="text-2xl hidden md:flex">
-              Browse<span class="text-btn">4</span>Pets
+              Browse<span class="text-[--color-btn]">4</span>Pets
             </h1>
           </div>
 
@@ -147,7 +147,7 @@
     </header>
 
     <!-- main start -->
-    <main class="md:max-w-7xl mx-auto mt-7">
+    <div class="md:max-w-7xl mx-auto mt-7">
       <!-- Hero Section start -->
       <div class="md:mt-16 md:mb-110">
         <div class="relative">
@@ -262,10 +262,8 @@
             <p>3 items</p>
           </div>
         </div>
-      </div>
-
-      
-    </main>
+      </div>   
+    </div>
 
     <!-- Trending Pet Products -->
     <div class="px-6 mb-14 md:bg-[--color-background] ">
@@ -558,7 +556,71 @@
       </div>
     </div>
 
+
+    <!-- get news part -->
+    <div class="bg-[--color-background] flex flex-col justify-center items-center text-center rounded-xl relative">
+      <div>
+        <img class="mt-8 w-[190px]" src="/c1-assets/cute-pet-mid.png" alt="cute-pet-mid">
+      </div>
+      <div class="flex flex-col justify-center items-center text-center mt-8 mb-8" >
+        <h1 class="font-adlam text-2xl mb-3">Get Pawsome News!</h1>
+        <p>Exclusive training tips, ticks, product deals and more.</p>
+        <input class="block bg-white py-2 px-3 w-[321px] mt-5 mb-4 " type="email" name="email" id="email" placeholder="Enter email....">
+        <Button class="bg-[--color-btn] py-2 px-8 rounded-lg">Subscribe</Button>
+      </div>
+    </div>
+
     <!-- footer start -->
-    <footer></footer>
+    <footer>
+      <div class="bg-[--color-foot] h-[752px] md:h-[654px] ">
+        <div class="px-6 pt-92 md:mx-auto md:max-w-7xl md:flex md:justify-center md:items-end md:gap-40">      
+          <!-- logo part -->
+          <div class="">
+            <div class="flex items-center gap-2 md:gap-3 pb-5">
+              <img class="w-[35px] md:w-[45px]" src="/c1-assets/logo-footer.png" alt="">
+              <h1 class="text-xl md:text-2xl">
+                Browse<span class="text-[--color-btn]">4</span>Pets
+              </h1>
+            </div>
+            <div>
+              <p class="text-gray-500 md:text-xl">Discover a world of treats, toys, and <br class="hidden md:flex"> essentials handpicked for your furry <br class="hidden md:flex"> friends</p>
+            </div>           
+          </div>
+           <!--  -->
+          <div class="flex flex-col gap-5 md:gap-6 mt-9 md:text-xl">
+            <a href="#">Find a pet</a>
+            <a href="#">Breeds</a>
+            <a href="#">Contact us</a>
+          </div>
+          <!--  -->
+          <div class="mt-10 md:justify-end md:items-end ">
+            <h1 class="text-sm">Follow Us</h1>
+            <div class="flex gap-7 mt-3">
+              <!-- fb -->
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="23" height="23" viewBox="0 0 50 50">
+                <path d="M25,3C12.85,3,3,12.85,3,25c0,11.03,8.125,20.137,18.712,21.728V30.831h-5.443v-5.783h5.443v-3.848 c0-6.371,3.104-9.168,8.399-9.168c2.536,0,3.877,0.188,4.512,0.274v5.048h-3.612c-2.248,0-3.033,2.131-3.033,4.533v3.161h6.588 l-0.894,5.783h-5.694v15.944C38.716,45.318,47,36.137,47,25C47,12.85,37.15,3,25,3z"></path>
+            </svg>
+            <!-- insta -->
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="23" height="23" viewBox="0 0 50 50">
+              <path d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z"></path>
+              </svg>
+              <!-- linkedin -->
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="23" height="23" viewBox="0 0 50 50">
+                <path d="M25,2C12.318,2,2,12.317,2,25s10.318,23,23,23s23-10.317,23-23S37.682,2,25,2z M18,35h-4V20h4V35z M16,17 c-1.105,0-2-0.895-2-2c0-1.105,0.895-2,2-2s2,0.895,2,2C18,16.105,17.105,17,16,17z M37,35h-4v-5v-2.5c0-1.925-1.575-3.5-3.5-3.5 S26,25.575,26,27.5V35h-4V20h4v1.816C27.168,20.694,28.752,20,30.5,20c3.59,0,6.5,2.91,6.5,6.5V35z"></path>
+            </svg>
+            <!-- youtube -->
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="23" height="23" viewBox="0 0 50 50">
+              <path d="M 44.898438 14.5 C 44.5 12.300781 42.601563 10.699219 40.398438 10.199219 C 37.101563 9.5 31 9 24.398438 9 C 17.800781 9 11.601563 9.5 8.300781 10.199219 C 6.101563 10.699219 4.199219 12.199219 3.800781 14.5 C 3.398438 17 3 20.5 3 25 C 3 29.5 3.398438 33 3.898438 35.5 C 4.300781 37.699219 6.199219 39.300781 8.398438 39.800781 C 11.898438 40.5 17.898438 41 24.5 41 C 31.101563 41 37.101563 40.5 40.601563 39.800781 C 42.800781 39.300781 44.699219 37.800781 45.101563 35.5 C 45.5 33 46 29.398438 46.101563 25 C 45.898438 20.5 45.398438 17 44.898438 14.5 Z M 19 32 L 19 18 L 31.199219 25 Z"></path>
+              </svg>
+          
+            </div>
+          </div>
+
+
+
+        </div>
+
+      </div>
+    </footer>
   </body>
 </html>
