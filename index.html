@@ -25,6 +25,8 @@
         /* footer color */
         --color-foot: rgba(255, 220, 38, 0.5);
         --color-font: rgba(17, 17, 17, 1);
+        /* Gradient color */
+        --gradient-bg: linear-gradient(109deg, #F7CCFB 1.27%, #AFD2FD 100%);
       }
     </style>
 
@@ -146,7 +148,7 @@
       </nav>
     </header>
 
-    <!-- main start -->
+    <!-- Browse By Categories -->
     <div class="md:max-w-7xl mx-auto mt-7">
       <!-- Hero Section start -->
       <div class="md:mt-16 md:mb-110">
@@ -262,29 +264,60 @@
             <p>3 items</p>
           </div>
         </div>
-      </div>   
+      </div>  
+       
     </div>
 
+
+    <!-- daisyui accordion -->
+
+    <div class="px-6 space-y-4 mb-20 md:max-w-7xl md:mx-auto">
+      <h1 class="text-2xl">Frequently Asked Questions (FAQ)</h1>
+      <div class="collapse collapse-plus bg-base-200">
+        <input type="radio" name="my-accordion-3" checked="checked" />
+        <div class="collapse-title text-xl font-medium">What types of pets do you sell?</div>
+        <div class="collapse-content">
+          <p>We sell a variety of pets including dogs, cats, birds, and exotic animals. Each pet is carefully chosen for its temperament, health, and suitability for different kinds of families.</p>
+        </div>
+      </div>
+      <div class="collapse collapse-plus bg-base-200">
+        <input type="radio" name="my-accordion-3" />
+        <div class="collapse-title text-xl font-medium">How do I know if a pet is right for me?</div>
+        <div class="collapse-content">
+          <p>We provide detailed information about each pet's breed, behavior, and care requirements on our website. If you're unsure, our expert team is available to assist you in selecting the best pet based on your lifestyle.</p>
+        </div>
+      </div>
+      <div class="collapse collapse-plus bg-base-200">
+        <input type="radio" name="my-accordion-3" />
+        <div class="collapse-title text-xl font-medium">What is your return or refund policy for pets?</div>
+        <div class="collapse-content">
+          <p>We have a 30-day health guarantee. If you find any health issues within 30 days of purchase, we will work with you to either replace the pet or provide a full refund. Additionally, we offer support for adjusting your new pet to its new home.</p>
+        </div>
+      </div>
+    </div>
+
+
+
     <!-- Trending Pet Products -->
-    <div class="px-6 mb-14 md:bg-[--color-background] ">
+    <div class="px-6 mb-14 md:mb-40 md:bg-[--color-background] ">
       <div class="md:max-w-7xl mx-auto md:py-30">
         <h1 class="text-2xl md:text-3xl font-adlam md:mb-8">Trending Pet Products</h1>
-        <div class="md:flex items-center justify-center gap-6">
+        <div class="md:flex items-center justify-between">
           <!-- big card -->
           <div
-            class="bg-[--color-card] rounded-lg px-7 py-9 mt-8 relative box-border h-[375px] mb-4 md:w-[424px] md:h-[370px] md:mt-4"
+            class="bg-[--color-card] rounded-lg px-7 py-9 mt-8 relative box-border h-[375px] mb-4 md:w-[444px] md:h-[370px] md:mt-4"
           >
-            <h1 class="text-2xl md:text-3xl font-adlam mb-5">
+            <h1 class="text-2xl md:text-4xl font-adlam mb-5">
               T-Shirt For Dogs
             </h1>
             <p class="text-gray-500 mb-4">
-              Discover a world of treats, toys, and essentials handpicked for
+              Discover a world of treats, toys, and <br> essentials handpicked for
             </p>
             <button class="rounded-lg bg-white px-6 py-2 font-medium">
               Shop Now
             </button>
             <img
-              class="relative -top-35 left-30 pb-3"
+              class="relative -top-35 left-30 pb-3 md:left-40 md:-top-38"
               src="/c1-assets/cute-pet-small.png"
               alt="cute-pet-small"
             />
@@ -556,19 +589,60 @@
       </div>
     </div>
 
+    <!-- Everyday low Price -->
+     <div class="mb-90 md:mb-100 md:max-w-7xl md:mx-auto">
+      <div class="px-6 md:px-0 font-adlam text-2xl">
+        <h1 class="mb-8 md:text-4xl md:mb-12">Everyday low Price</h1>
+
+        <div class="md:flex md:justify-between">
+
+          <!--  -->
+        <div style="background: linear-gradient(109deg, #F7CCFB 1.27%, #AFD2FD 100%);" class="rounded-xl py-9 px-8 relative h-[334px] mb-6 md:hidden">
+          <h2 class="text-2xl font-adlam">Pet Grooming Mitt</h2>
+          <h3 class="text-[40px] font-adlam text-white mt-3">$7.99</h3>
+          <img class="h-[268px] relative left-25 -top-12" src="/c1-assets/cute-dog-mid.png" alt="cute-dog-mid">
+        </div>
+
+        <!-- for pc mode  -->
+        <div style="background: linear-gradient(109deg, #F7CCFB 1.27%, #AFD2FD 100%);" class="flex items-center rounded-xl pl-10 hidden md:flex">
+          <div>
+            <h1 class="text-xl mb-4">Under Price</h1>
+            <h2 class="text-3xl font-adlam mb-3">Pet Grooming Mitt</h2>
+            <h4 class="text-white text-2xl mb-5"> (Easy Hair Removal) </h4>
+            <h3 class="text-6xl font-adlam mt-3">$7.99</h3>
+          </div>
+          <div>
+            <img class="w-[390px] relative left-6 top-6 " src="/c1-assets/cute-dog-mid.png" alt="cute-dog-mid">
+          </div>
+        </div>
+        <!--  -->
+
+        <div style="background: linear-gradient(109deg, #FFF9F4 1.27%, #F9DF8A 100%);" class="rounded-xl py-9 md:px-12 px-8 relative h-[334px] md:w-[521px] md:h-[480px]">
+          <h2 class="text-2xl md:text-3xl md:mt-7 font-adlam">T-Shirt for Dogs</h2>
+          <h3 class="text-[40px] md:text-6xl font-adlam text-[--color-btn] mt-3">$7.99</h3>
+          <img class="h-[268px] md:h-[392px] relative left-30 md:left-35 -top-12 md:-top-20" src="/c1-assets/cute-pet-mid.png" alt="cute-dog-mid">
+        </div>
+        </div>
+
+      </div>
+     </div>
 
     <!-- get news part -->
-    <div class="bg-[--color-background] flex flex-col justify-center items-center text-center rounded-xl relative mx-6 px-3 top-67 md:top-55 md:max-w-7xl md:mx-auto md:flex-row md:justify-start md:px-24 md:py-10 md:gap-30">
-      <div>
-        <img class="mt-8 w-[190px] md:w-[330px] md:mt-9" src="/c1-assets/cute-pet-mid.png" alt="cute-pet-mid">
-      </div>
-      <div class="flex flex-col justify-center items-center text-center mt-8 mb-8 md:items-start" >
-        <h1 class="font-adlam text-2xl mb-3 md:mb-5 md:text-4xl">Get Pawsome News!</h1>
-        <p class="md:text-xl md:mb-6">Exclusive training tips, ticks, product deals and more.</p>
-        <input class="block rounded-lg bg-white py-2 md:py-5 md:px-5 px-3 w-[321px] md:w-[500px] mt-5 mb-4 " type="email" name="email" id="email" placeholder="Enter email....">
-        <Button class="bg-[--color-btn] py-2 md:py-5 px-8 md:px-10 rounded-lg md:text-xl md:mt-9">Subscribe</Button>
+   <div class="">
+    <div class="relative md:max-w-7xl md:mx-auto">
+      <div class="bg-[--color-background] flex flex-col justify-center items-center text-center rounded-xl absolute mx-6 px-4 -top-70 md:-top-75  md:mx-auto md:flex-row md:justify-center md:items-center md:max-w-7xl md:gap-30 md:py-13 md:text-left ">
+        <div>
+          <img class="mt-8 w-[190px] md:w-[330px] md:mt-9 md:ml-23" src="/c1-assets/cute-pet-mid.png" alt="cute-pet-mid">
+        </div>
+        <div class="flex flex-col justify-center items-center mt-8 mb-8 md:pr-55 md:justify-start md:items-start " >
+          <h1 class="font-adlam text-2xl mb-3 md:mb-5 md:text-4xl">Get Pawsome News!</h1>
+          <h2 class="md:text-xl md:mb-6">Exclusive training tips, ticks, product deals and more.</h2>
+          <input class="block rounded-lg bg-white py-2 md:py-5 md:px-5 px-3 w-[350px] md:w-[500px] mt-5 mb-4 " type="email" name="email" id="email" placeholder="Enter email....">
+          <Button class="bg-[--color-btn] py-2 md:py-5 px-8 md:px-10 rounded-lg md:text-xl md:mt-9">Subscribe</Button>
+        </div>
       </div>
     </div>
+   </div>
 
     <!-- footer start -->
     <footer>
